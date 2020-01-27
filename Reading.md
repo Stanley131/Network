@@ -16,6 +16,12 @@
   - presentation: allow applications to interpret meaning of data, e.g.,   
       encryption, compression, machine-specific conventions
   - session: synchronization, checkpointing, recovery of data exchange  
+  
+### network Security 
+  - DoS: denial of Service 
+  - packet “sniffing” 
+  - IP spoofing: send packet with false source address
+  - 
 
 
   
