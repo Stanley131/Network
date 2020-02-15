@@ -130,11 +130,30 @@
           - redirect servers
           - exploit DNS for DDos 
         
+### P2P Architecture 
+  - no always on server 
+  - arbitrary end systems directly communicate 
+  - peers are intermittently connected and change IP change 
+    - example: BitTorrent 
+    - Streaming(Kankan)
+    - Skype
+  - file divided into 256kb chunks 
+  - peers in torrent send/ recive file chunks 
+  - peer join torrent 
+  - chum: peers may come and go 
+  - once peer has entire file, it may leave or remain in tprrent 
+
+### Another P2P application DHT 
+  - DHT  = distributed P2P database
+    - BitTorrent's distributed tracker
+  - Database has (key, value) pairs; 
+    - key: ss number; value: human name
+    - key: content type; value: IP address
+  - Peers query DB with key
+      - DB returns values that match the key
+  - Peers can also insert (key, value) peers
 
 
-
-
-          
    
   
   
