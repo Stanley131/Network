@@ -154,6 +154,56 @@
   - Peers can also insert (key, value) peers
 
 
+### . Circular DHT (I)
+  - each peer onlu aware of immmediate successor and predessor 
+  - Each peer from 6 to 2 messages 
+  - To handle peer churn, require 
+  - Peer Churn 
+    - each peer to know the IP address of its two successors. 
+    - Each peer periodically pings its two successors to see if they are still alive.
+    
+    
+### CDNs: video streaming and content distribution networks (CDNs)
+  - solutiuon: application-level infrasstruture 
+  - Spatial Coding : instead of sending N values of same color (all purple), send only
+    two values: color  value (purple)  and number of repeated values (N)
+  - temporal Coding: instead of sending complete frame at i+1, send only differences
+    from frame i. 
+  - Spatial coding within images, temporal coding one image to next. 
+  - CBR: video encoding rate fixed 
+  - VBR: as amount of spatial, temporal coding chnages 
+### Streaming multimedia: DASH 
+  - DASH: Dynamic, Adaptive, Streaming over HTTP 
+  - Server: 
+    - divides vodeo file into mltiple chunks 
+    - each chunk stored, encoded at different rates 
+    - manifest file: provides URLs for different chunks 
+  - Clients: 
+    - periodically measures server-to-client bandwith 
+    - consulting manifest, requests one chunk at a time 
+      - chooses maximun coding rate sustainable goven current bandwidth 
+      - can choose different coding rates at different points in time(depending 
+        on available bandwidth at time)
+   - Challenge: how to stream content to hundreads of thousands of simultaneous users 
+      - Option 1: single, large "mega-server"
+        - single point of failure 
+        - point of network congestion 
+        - long path to distant clients 
+        - does not scale 
+      - Option 2: store/serve multiple copies of videos at multiple geographically 
+        distributed sites
+         - enter deep: push CDN servers deep into many access networks 
+            - close to users 
+            - Used by Akamai 1700
+         - bring homeL smaller number of larger clusters 
+         - CDN: stores copies of conetent at CDN nodes 
+         - subsriber requests content from CDN 
+            - dorected to nearby copy retrieves content 
+            - may choose different copy if network path congested 
+            
+ 
+
+
    
   
   
