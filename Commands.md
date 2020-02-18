@@ -50,3 +50,13 @@
     - username 
     - password 
     
+### nslookup 
+  - nslookup is a network administration command-line tool available in many computer 
+  operating systems for querying the Domain Name System (DNS) to obtain domain name or
+  IP address mapping, or other DNS records. 
+  - "name server lookup"
+  - interactive mode: nslookup 
+  - non-interactive mode: nslookup domain_name 
+  - set type=<ResourceRecordtype>
+    - https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup-set-type
+  - 
