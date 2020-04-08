@@ -45,8 +45,65 @@
             - in-order datagram deivery 
             - guarenteed minimum bandwidth to flow 
             - restrictions on changes in inter-packets spacing. 
-5. What is inside a router?
-   -  
+            
+### 2. The Data Plane
+1. DHCP: Dynamic Host Configuration Protocol 
+  - Dynamically obtain its IP address from network 
+  - Can renew its lease on address in use 
+  - allows reuse of addresses 
+  - suppoet for mobil users who want to join network
+2. DHCP client-server scenario 
+  - new arriving client broadcasts a msg
+  - example: 0.0.0.0, 68, dest: 255.255.255.67 yiaddr: 0.0.0.0  transactionID:654
+  - DHCP server reply msg: DHCP offer: src:233.1.2.5.yiaadrr: 233.1.2.4 lifetime:3600 secs
+  - DHCP request: src: 0.0.0.0, 68, dest: 255.255.255.255, 67, yiaddrr: 233.1.2.4 
+  - DHCP ACK: src: 233.1.2.5, 67 dest: 255.255......
+  - 2RRT, timeout in an hour and reusability 
+3. DHCP: more than IP addresses： 
+  - DHCP：can retuen more than just allocated IP address on subnet 
+  - address of first-hop router of client 
+  - name and ip address of DNS server 
+  - network mask 
+4. DHCP: example 
+  - Router with DHCP server built into router 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
         
