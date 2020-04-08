@@ -66,6 +66,42 @@
   - network mask 
 4. DHCP: example 
   - Router with DHCP server built into router 
+5. DHCP: Wireshark output (home LAN)
+  - can look at DHCP output 
+6. Hierachical Addressing: route aggregation
+  - 200.23.16.0/20
+  - 200.23.18.0/23
+  - different ISPs
+  - How ISP get block of addresses?
+  - ICANN: internet Corporation Asssignrf Nanees and Numbers:
+7. NAT: network address translation
+  - One router, one IP, then why many devices?
+  - Port Number
+  - NAT Translation Table: LAN side addr <--> WAN side addr
+  - 10.0.0.1, 3345  <--> 138.76.29.7, 5001
+  - Firewall is different from NAT
+  - port number 16-bit 
+8. IPv6: motivation
+  - priority: identify priority among datagrams in flow
+  - flow Label: identify datagrams in samme "flow."
+  - next header: identify upper layer protocol for data. 
+9. other changes from IPv4
+  - Checksum: removed entirely to reduce processing time at 
+    each hop 
+  - options: allowed, but outside of header, indicated by "Next
+    Header" field
+  - ICMPv6: new version of ICMP
+
+10. Translation from IPv4 to IPv6 
+  - tunneling: IPV6 datagram carried as payload in Ipv4 datagram
+    among Ipv4 routers 
+  - example: UPv4 tunnel connectiong Ipv6 routers 
+
+11. IPv6: adoption
+  - 8% of clients access servers vua Ipv6 
+  - still having maximun data fragment 
+  - it has a larger header 
+  
   
   
   
