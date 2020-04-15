@@ -102,18 +102,35 @@
   - still having maximun data fragment 
   - it has a larger header 
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+### 3. Generalized Forward and SDN 
+1. General Concept 
+  - Each Router contains a flow table that is computed and distributed by a
+    logically centralized routing s:  . 
+  - local flow table
+2. OpenFlow Data Plane abstraction 
+  - flow: defined by header fields
+    - five tuples: src add, des add, src port, des port, 
+  - generalized fowarding: simple packet-handling rules 
+    - pattern: match values in packet header fields 
+    - Actions forwarding packets: drop, frorward, , modify, matched packet or send matched packet to controller 
+    - priority 
+    - Counters: #bytes and #packets 
+    - *: wildcard
+3. OpenFlowL Flow Tanle Entries 
+  - Destination-based forwarding 
+  - Firewall 
+  - Destination-based layer 2 (switch) forwarding
+ 
+4. Network-layer functions 
+  - rotuing:  determine route taken by packets from source to destination 
+5. Routing Protocol 
+  - Routing Protocol goal: determine "good" paths equivalently routes, from sending hosts to receiving host, 
+  through network of routers
+  - path: sequence of routers packets will traverse in going from given initial source host to given final destination host
+  - good: least cost, fastest, least congested
   
             
-            
+          
             
             
             
