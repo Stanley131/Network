@@ -128,8 +128,36 @@
   through network of routers
   - path: sequence of routers packets will traverse in going from given initial source host to given final destination host
   - good: least cost, fastest, least congested
+
+6. Graph abstraction of the network 
+  - cost of the path 
+
+7. A link-state routing algorithm 
+  - Dijkstra's algorithm 
+  - net topology, link costs known to all nodes 
+  - exchange all infomation 
+  - compute least paths form one nodes to other nodes 
+  - notation: C(x, y), D(V), P(V), predecessor node along path from source to C, N'
+  - find the shortest path, then build the forwarding table 
+  - complexity: n^2, it could be nlog(n)
+  - space requirement, exchange message requires N * E 
   
-            
+8. bad things 
+  - What is the netework failing, router failed ?
+  - LoOping, resulted by the inconsistency 
+  - Oscillations possible
+
+9. Distance Vector
+  - Bellman-Ford equation (Dynamic programming)
+  - iterative asychronous 
+  - DV update message from neighbor 
+  - distributed: each node notifies neighbors only when DV changes. 
+  - DBF 
+10. Distance vector: cost 
+  - gossip cost 
+  - bad news travels slow 
+  - link cost changes 
+  - poisoned reverse 
           
             
             
