@@ -157,7 +157,9 @@
   - gossip cost 
   - bad news travels slow 
   - link cost changes 
-  - poisoned reverse 
+  - poisoned reverse
+    - If Z routes through Y to get to X: Z tells Y i
+  
           
             
             
