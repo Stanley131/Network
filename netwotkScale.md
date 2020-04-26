@@ -60,7 +60,17 @@
     - router may learn about more than one route to destination AS, selects route based on: 
     - local prefrence value attribute: policy decision, shortest AS-PATH, closest NEXT-HOP router: hot potato routing, additional criteria
   - Hot Potato Routing: choose local gateway that hs least intra-domain cost. 
-  - BGP: achieving policy via advertisements: 
+  - BGP: achieving policy via advertisements: choose not to advertise, dual-homed
+9. Why different Intra-, Inter-AS routing?
+  - policy: 
+    - inter-AS: admin wants control over how is traffic routed, who routes through its net 
+    - intra-AS: single admin, so no policy decisions needed 
+  - Scale: 
+    - hierachial routing saves table size, reduced update traffic 
+  - Performance:  
+    - Intra-AS: can foucs on performance 
+    - Inter-AS: policy may dominate over performance 
+    
     
   
   
