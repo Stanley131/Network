@@ -22,4 +22,19 @@
 - API for table-based switch control 
 - protocol for communicating with controlle
 ### 5. SDN persepctive: SDN controller (netowrk OS)
-- 
+- OpenFlow Controller
+- Key Controllerto-switch messages 
+  - features: controller queries switch features, switch replies 
+  - configure: controller queries 
+  - midify state
+  - SDN running examle: 
+    - router -> opeflow -> link-state -> network graph -> kijstra link-state routing -> host info -> subnet
+### SDN Issues
+- time consuming: time delay 
+- Active reasearch area for this 
+
+
+
+
+
+  
